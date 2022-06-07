@@ -1,0 +1,56 @@
+
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: simpleapp-build
+  labels:
+    app : simpleapp
+    team: team1
+    build-namespace: simpleapp-build
+    size: small
+    environment: build
+    goldilocks.fairwinds.com/enabled: "true"
+    argocd.argoproj.io/managed-by: simpleapp-build
+
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: simpleapp-dev
+  labels:
+    app : simpleapp
+    team: team1
+    build-namespace: simpleapp-build
+    size: small
+    environment: dev
+    goldilocks.fairwinds.com/enabled: "true"
+    argocd.argoproj.io/managed-by: simpleapp-build
+
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: simpleapp-qa
+  labels:
+    app : simpleapp
+    team: team1
+    build-namespace: simpleapp-build
+    size: small
+    environment: qa
+    goldilocks.fairwinds.com/enabled: "true"
+    argocd.argoproj.io/managed-by: simpleapp-build
+
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: simpleapp-prod
+  labels:
+    app : simpleapp
+    team: team1
+    build-namespace: simpleapp-build
+    size: small
+    environment: prod
+    goldilocks.fairwinds.com/enabled: "true"
+    argocd.argoproj.io/managed-by: simpleapp-build
