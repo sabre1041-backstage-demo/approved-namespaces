@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: simpleapp
+  description: simpleapp
+  labels:
+    size: small
+    environments: build-dev-qa-prod
+spec:
+  owner: team1
